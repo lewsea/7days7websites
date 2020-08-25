@@ -1,0 +1,42 @@
+.nav {
+  background-color: $bg-color;
+  height: 8vh;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+
+  h2 {
+    color: white;
+    margin: auto 0;
+    padding-left: 2rem;
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      list-style: none;
+      font-size: 1.5rem;
+      margin-right: 3rem;
+      align-self: center;
+      a {
+        text-decoration: none;
+        color: #e7e7e7;
+      }
+
+      &:hover {
+        text-decoration: underline white;
+      }
+    }
+  }
+}
+
+.main-header {
+  background-image: url(/img/hero-img.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  height: 105vh;
+  display: flex;
+  justify-content: space-around;
+}

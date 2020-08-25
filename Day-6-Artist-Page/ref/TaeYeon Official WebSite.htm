@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>TaeYeon Official WebSite</title>
+
+
+<link rel="stylesheet" href="TaeYeon%20Official%20WebSite_files/main.css" type="text/css">
+<link rel="stylesheet" href="TaeYeon%20Official%20WebSite_files/scrollbar.css" type="text/css">
+<script async="" src="TaeYeon%20Official%20WebSite_files/analytics.js"></script><script src="TaeYeon%20Official%20WebSite_files/jquery-1.js" type="text/javascript"></script>
+<script src="TaeYeon%20Official%20WebSite_files/swfobject.js" type="text/javascript"></script>
+<script src="TaeYeon%20Official%20WebSite_files/jquery.js" type="text/javascript"></script>
+<script src="TaeYeon%20Official%20WebSite_files/jquery-ui-1.js" type="text/javascript"></script>  
+<script src="TaeYeon%20Official%20WebSite_files/home.js" type="text/javascript"></script>
+<script src="TaeYeon%20Official%20WebSite_files/mpPlayer.js" type="text/javascript"></script> 
+
+<style type="text/css">
+    html, body {overflow:hidden;}
+    #MainFrameContainer{position:absolute; top:0; left:0; right:0; bottom:0; background:#fff; width:100%; height:100%; }
+    #MainFrameContainer iframe{position:absolute; top:0; left:0; right:0; bottom:0; width:100%; height:100%;}
+</style>
+<style type="text/css" media="screen">#mpPlayerObject {visibility:hidden}#bgPlayerObject {visibility:hidden}</style></head>
+<body style="overflow:hidden;">
+
+<div id="MainFrameContainer">
+    <iframe src="TaeYeon%20Official%20WebSite_files/Main.htm" name="mainFrame" id="mainFrame" scrolling="auto" style="width: 100%; height: 100%;" width="0" height="0" frameborder="0"></iframe>
+</div>
+<div style="display:none;" id="BGM">http://socdn.smtown.com/upload/mf/bgm/taeyeon/ver13/ver13.mp3</div>
+
+<div id="playerWrap">
+<div id="player">
+    <a href="#" id="pBt_play" class="play" title="재생">재생</a>  <!-- click : add class 'pOn' -->
+    <!--a href="#" id="pBt_pause" class="" title="정지">정지</a-->  <!-- click : add class 'pOn' -->
+    <a href="#" id="pBt_prev" class="" title="이전 곡">이전 곡</a>  <!-- click : add class 'pOn' -->
+    <span class="pBar">&nbsp;</span>
+    <a href="#" id="pBt_next" class="" title="다음 곡">다음 곡</a>  <!-- click : add class 'pOn' -->
+
+    <span class="song_info"> - 선택 된 곡이 없습니다.</span>
+
+    <ul class="btn1">
+        <li><a href="#" id="pBt_list" class="" title="재생목록">재생목록</a></li>  <!-- click : add class 'pOn' -->
+        <li><a href="#" id="pBt_text" class="" title="가사">가사</a></li>  <!-- click : add class 'pOn' -->
+    </ul>
+
+    <div id="timeLIne"> <!-- width: 8px ~ 338px -->
+        <span class="timeBar ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ui-slider-disabled ui-state-disabled ui-disabled" aria-disabled="true"><div class="ui-slider-range ui-widget-header ui-slider-range-min" style="width: 0%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;" disabled="disabled"></a></span>
+        <span class="timeNum"><span class="timeNowPlay">00:00</span> / <span class="timeTotal">00:00</span></span>
+    </div>
+
+    <ul class="btn2">
+        <li><a href="#" id="pBt_repeat" class="" title="반복">반복</a></li>  <!-- click : add class 'pOn' -->
+        <li><a href="#" id="pBt_random" class="" title="랜덤">랜덤</a></li>  <!-- click : add class 'pOn' -->
+    </ul>
+         
+    <div id="volume">
+        <a href="#" id="pBt_volume" title="Volume">볼륨 on|off</a>  <!-- width: 8px ~ 48px -->
+        <span class="volumeBar ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-slider-range-min" style="width: 100%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 100%;"></a></span>
+
+    </div>   
+    <a href="#" id="pBt_close" title="Close">플레이어 닫기</a>         
+
+
+<!-- 재생목록 레이어 show : remove class 'hide' -->
+    <div id="playList">
+        <strong class="tle">PLAY LIST</strong>
+        <ul class="listBox">
+        </ul>
+        <div class="btn">
+            <div class="btnLf">
+                <input type="checkbox" class="chk">
+                <a href="#" id="pl_selDel"><img src="TaeYeon%20Official%20WebSite_files/btn_selDel.gif" alt="선택삭제"></a>
+            </div>
+            <div class="btnRg">
+                <a href="#" id="pl_prev" title="이전"></a><a href="#" id="pl_next" title="다음"></a>
+            </div>
+        </div>
+        <a href="#" id="playList_close" title="Close">play list 닫기</a>
+    </div>
+<!-- //재생목록 레이어 -->
+<!--가사창-->
+    <div id="lyrics">
+        <strong class="tle">LYRICS</strong>
+        <div id="lyrics_wrap">
+        <div class="content">
+        </div>
+        </div>
+        <a href="#" id="lyrics_close" title="Close">가사창 닫기</a>
+    </div>
+    <div id="mpPlayerDIV"><div id="mpPlayerObject" style="visibility: visible;"></div></div>
+    <div id="bgPlayerDIV"><div id="bgPlayerObject" style="visibility: visible;"></div></div>
+</div>
+</div>
+
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-48434587-36', 'auto');ga('send', 'pageview');</script>
+
+</body></html>

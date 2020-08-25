@@ -1,0 +1,18 @@
+footer {
+  background-color: #3b3b3b;
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  .lang {
+    display: flex;
+    text-align: center;
+    li {
+      border-right: 1px solid gainsboro;
+      a {
+        padding: 1rem;
+        color: whitesmoke;
+      }
+    }
+  }
+}

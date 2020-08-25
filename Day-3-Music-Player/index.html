@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="cover-img">
+            <img src="img/album-cover.png" alt="" draggable="false">
+        </div>
+        <div class="music-ui">
+            <h1>GIANTS</h1>
+            <p>True Damage</p>
+            <input id="range" class="level" type="range" value="0" min="0">
+            <!-- The only button working here is the play and pause button, and the seek time -->
+            <div class="buttons-container">
+                <div class="buttons left">
+                    <button><img src="img/shuffle-white-18dp.svg" alt=""></button>
+                </div>
+                <div class="buttons">
+                    <button id="pre" disabled><img src="img/skip_previous-white-18dp.svg"></button>
+                    <button id="play"><img id="play_img" src="img/play_circle_filled-white-18dp.svg"></button>
+                    <button id="next"><img src="img/skip_next-white-18dp.svg"></button>
+                </div>
+                <div class="buttons right">
+                    <button disabled><img src="img/volume_up-white-18dp.svg" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

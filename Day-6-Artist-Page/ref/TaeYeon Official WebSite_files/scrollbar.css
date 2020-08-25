@@ -1,0 +1,14 @@
+.scrollbar-pane { margin-right: 21px; }
+.scrollbar-wrap { width:13px; padding:0 2px; background:#FFF; border:1px solid #EDEDED; margin:1px; }
+.scrollbar-handle-container { background: #FFF; width: 13px;}
+.scrollbar-handle-container.hover, .scrollbar-handle-container.move { background: #fafafa; }
+.scrollbar-handle, .scrollbar-handle-up, .scrollbar-handle-down { background: url("/Images/scrollbar/scrollbar_new.png") no-repeat; }
+.scrollbar-handle { width: 13px; height:60px; background-position: 0px -52px; }
+.scrollbar-handle:hover { background-position: 0px -112px; }
+.scrollbar-handle.move { background-position: 0px -112px; }
+.scrollbar-handle-up { width: 13px; height: 13px; background-position: 0px 0px; margin-bottom: 1px; }
+.scrollbar-handle-up.hover, .scrollbar-handle-up:hover { background-position: 0px -13px; }
+.scrollbar-handle-up.move { background-color: #999; }
+.scrollbar-handle-down { width: 13px; height: 13px; background-position: 0px -26px; margin-top: 1px;}
+.scrollbar-handle-down.hover, .scrollbar-handle-down:hover { background-position: 0px -39px; }
+.scrollbar-handle-down.move { background-color: #999; }

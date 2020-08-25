@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Components</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- IDK WHY I FIT THEM ALL ON THE SAME SINGLE PAGE DIV (probably a bad idea)-->
+</head>
+<body>
+    <div class="components-title">
+        <h1>Job Page Components</h1>
+        <h1>UI Control Components</h1>
+        <h1>Webshop Components</h1>
+    </div>
+    <div class="components">
+        <div class="job-page-components">
+            <div class="job-description-component">
+                <h1>Product Designer (UI/UX)</h1>
+                <span>Product Designer (UI/UX)</span>
+                <p>We are looking for a ui/ux web designer to redesign our website which is a subscription snack box company.</p>
+                <div class="job-tags">
+                    <div>UI Design</div>
+                    <div>UX Design</div>
+                    <div>Prototyping</div>
+                </div>
+            </div>
+            <div class="card-list-component">
+                <div class="list-component">
+                    <div><img src="img/1.png" alt=""></div>
+                    <div class="name">
+                        <h2>Root</h2>
+                        <p>Lead Designer</p>
+                    </div>
+                    <div class="place">
+                        <img src="img/pin.svg" alt="">
+                        <p>Italy</p>
+                    </div>
+                </div>
+                <div class="list-component">
+                    <div class="img"><img src="img/2.png" alt=""></div>
+                    <div class="name">
+                        <h2>Karma</h2>
+                        <p>Brand Designer</p>
+                    </div>
+                    <div class="place">
+                        <img src="img/pin.svg" alt="">
+                        <p>France</p>
+                    </div>
+                </div>
+                <div class="list-component">
+                    <div><img src="img/3.png" alt=""></div>
+                    <div class="name">
+                        <h2>Boulevard</h2>
+                        <p>Senior Experience Designer</p>
+                    </div>
+                    <div class="place">
+                        <img src="img/pin.svg" alt="">
+                        <p>Korea</p>
+                    </div>
+                </div>
+            </div>
+            <button class="search-component">
+                <p>See all jobs</p>
+                <img src="img/arrow.svg" alt="">
+            </button>
+        </div>
+        <div class="ui-controls-components">
+            <div class="customize">
+                <h2>Customize your widget</h2>
+                <label for="" class="radio-buttons"> Display Contact Button
+                    <input type="radio" name="radio" id="" checked> 
+                    <span class="radio"></span>
+                </label>
+                <label for="" class="radio-buttons"> Hide Email Address
+                    <input type="radio" name="radio" id="">
+                    <span class="radio"></span>
+                </label>
+                <label for="" class="radio-buttons"> Display Publish Button
+                    <input type="radio" name="radio" id="">
+                    <span class="radio"></span>
+                </label>
+                <div class="customize-button">
+                    <button>Cancel</button>
+                    <button>Save</button>
+                </div>
+            </div>
+            <div class="other">
+                <h2>Other</h2>
+                <label for="" class="checkbox-button"> Turn on in-app notifications.
+                    <input type="checkbox" checked name="" id="">
+                    <span class="checkmark"></span>
+                </label>
+                <label for="" class="checkbox-button"> Receive weekly newsletters and other offers.
+                    <input type="checkbox" name="" id="">
+                    <span class="checkmark"></span>
+                </label>
+            </div>          
+            <div class="dropdown">
+                <button onclick="show()" class="dropbtn"><img src="img/ellipsis-h.svg" alt=""></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Edit you list</a>
+                    <a href="#">Account settings</a>
+                    <a href="#">View you profile</a>
+                </div>
+            </div>
+        </div>
+        <div class="webshop-components">
+            <div class="product-card">
+                <div class="product-description">
+                    <h2>Keep it sporty.</h2>
+                    <p>Our mission is to change the world through sport. Browse sportswear and shoes.</p>
+                    <button>View Collection</button>
+                </div>
+                <div class="product-img">
+                    <img src="img/maksim-larin-ezdrvzA1hZw-unsplash.png" alt="">
+                </div>
+            </div>
+            <div class="product-sold-out">
+                <img src="img/maksim-larin-ezdrvzA1hZw-unsplash-left.png" alt="">
+                <div class="price">
+                    <p>Air monarch</p>
+                    <h2>$345</h2>
+                </div>
+                <button>Sold out</button>
+            </div>
+            <div class="product-price">
+                <p>Legend essential</p>
+                <h3>$345</h3>
+                <button>Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Designs from <a href="https://uidesigndaily.com">UI Design Daily</a></p>
+        <!-- THANKS -->
+        <!-- Photo by Maksim Larin on Unsplash -->
+        <!-- <span>Photo by <a href="https://unsplash.com/@maksimcul8r?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Maksim Larin</a> on <a href="https://unsplash.com/s/photos/pink-shoe?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> -->
+    </footer>
+    <script>
+        function show() { document.getElementById("myDropdown").classList.toggle("show"); } window.onclick =
+        function (event) { if (!event.target.matches('.dropbtn')) { var dropdowns =
+        document.getElementsByClassName("dropdown-content"); var i; for (i = 0; i < dropdowns.length; i++) { var
+            openDropdown=dropdowns[i]; if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show'); } } } }
+    </script>
+</body>
+</html>
